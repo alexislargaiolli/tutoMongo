@@ -1,0 +1,18 @@
+<html>
+ <head>
+    <title></title>
+	<link rel='stylesheet' href='/public/css/bootstrap.min.css'>
+ </head>
+	<body>
+		<div class="page-header">
+		<h1>Commentaires</h1>
+		</div>
+		<div class="panel panel-default">
+		<% comms.forEach(function(comm){ %>
+			<div class="panel-heading"><%= comm.pseudo %></div>
+			<div class="panel-body"><%= comm.contenu %></div>
+		<% }) %>
+		</div>
+		<script src="/public/css/bootstrap.min.js"></script>
+	</body>
+</html>
